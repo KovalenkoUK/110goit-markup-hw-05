@@ -438,6 +438,7 @@ font-family: var(--font-family);
     align-items: center;
     opacity: 0;
     pointer-events: none;
+    /* padding: 72px 24px 24px 24px; */
 }
 .modal-overlay.is-open{
     opacity: 1;
@@ -445,8 +446,8 @@ font-family: var(--font-family);
 }
 .modal{
     /* border-radius: 4px; */
-    /* max-width: 408px;
-    max-height: 584px; */
+    width: 408px;
+    min-height: 584px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: var(--dairy);
     position: absolute;
@@ -454,34 +455,45 @@ font-family: var(--font-family);
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 4px;
-        padding: 40px;
+        padding: 72px 24px 24px 24px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn{
         position: absolute;
-        top: 8px;
-        right: 8px;
+        top: 24px;
+        right: 24px;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: transparent;
         border: 1px solid rgba(0, 0, 0, 0.1);
-        width: 30px;
-        height: 30px;
+        width: 24px;
+        height: 24px;
         border-radius: 50%;
         padding: 0;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background-color: #e7e9fc;
+        cursor: pointer;
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus{
-        fill: #4D5AE5;
+        fill: #ffffff;
+        background-color: #404bbf;
+        border: none;
+    }
+    .icon-close{
+        fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .modal-form-title {
     font-family: var(--text-color);
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
+    color:#2E2F42;
 
     /* width: 448px; */
 }
@@ -489,6 +501,9 @@ font-family: var(--font-family);
 .modal-form {
     display: flex;
     flex-direction: column;
+}
+.modal-form-label{
+    margin-bottom: 8px;
 }
 
 .modal-form-field {
@@ -777,6 +792,7 @@ background-color: #31d0aa;
     border-radius: 4px;
     border: none;
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
     font-style: normal;
