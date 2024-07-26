@@ -666,7 +666,7 @@ font-family: var(--font-family);
     color: #757575;
 }
 
-.modal-form-check:checked span {
+.modal-form-check:checked+.modal-form-checkbox>.span-checkbox {
     background-color: var(--logo-color);
     color: #404bbf;
     border: none;
