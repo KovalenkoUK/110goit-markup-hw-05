@@ -624,7 +624,7 @@ font-family: var(--font-family);
     align-items: center;
     justify-content: center;
     fill: transparent;
-    
+
 }
 
 .modal-form-check-field {
@@ -666,29 +666,37 @@ font-family: var(--font-family);
     color: #757575;
 }
 
-.modal-form-check:checked+.modal-form-own-checkbox {
+.modal-form-check:checked span {
     background-color: var(--logo-color);
+    color: #404bbf;
+    border: none;
+    fill:#F4F4FD;
 }
 
-.modal-form-check:checked+.modal-form-own-checkbox .modal-form-own-checkbox-icon {
+/* .modal-form-check:checked+.modal-form-own-checkbox .modal-form-own-checkbox-icon {
     display: block;
-}
+} */
 
-.modal-form-check:focus+.modal-form-own-checkbox {
+/* .modal-form-check:focus+.modal-form-own-checkbox {
     box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.5);
 
-}
+} */
 
 .modal-form-sumbit {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
     align-self: center;
     padding: 10px 52px;
-    border: 1px solid var(--neader-footer-textcolor);
+    border: none;
     border-radius: 4px;
-    background-color: #2196F3;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.87;
-    letter-spacing: 0.09em;
+    background-color: #4D5AE5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
 
     cursor: pointer;
     color: var(--bggolor);
