@@ -601,10 +601,19 @@ font-family: var(--font-family);
     border-color: #4D5AE5;
     
 }
+.checkbox{
+    margin-bottom: 24px;
+}
 
 .modal-form-underline {
     text-decoration: underline;
     color: #4D5AE5;
+}
+.modal-form-checkbox{
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color:#8e8f99;
 }
 
 .modal-form-check-field {

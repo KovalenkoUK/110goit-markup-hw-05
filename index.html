@@ -426,16 +426,14 @@
                     <label class="modal-form-field" for="user-comment">Comment</label>
                     <textarea  id="user-comment" name="user-comment" class="modal-form-message" placeholder="Text input"></textarea>
                         </div>
-                    
-                    <label class="modal-form-check-field"></label>
-                    <input type="checkbox" class="modal-form-check" name="user_policy" required />
-                    <svg class="modal-form-own-checkbox">
+                    <div class="checkbox">
+                        <input id="user-privacy" type="checkbox"  value="true" class="modal-form-check" name="user-privacy" required visually-hidden />
+                        <label class="modal-form-checkbox" for="user-privacy">I accept the terms and conditions of the &nbsp;<a class="modal-form-underline" href="">Privacy Policy</a></label>
+                        <svg class="modal-form-own-checkbox">
                         <use class="modal-form-own-checkbox-icon" href="./images/icons.svg#icon-icon-check"></use>
-                    </svg>
-                    <span class="modal-form-own-checkbox-text"> I accept the terms and conditions of the</span>&nbsp;<a
-                        class="modal-form-underline" href="">Privacy Policy</a>
-                    
-                    <button type="submit" class="modal-form-sumbit">Send</button>
+                        </svg>
+                        <button type="submit" class="modal-form-sumbit">Send</button>
+                    </div>
             </div>
             </form>
         </div>
