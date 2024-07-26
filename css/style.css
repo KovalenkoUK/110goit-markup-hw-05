@@ -511,51 +511,53 @@ font-family: var(--font-family);
 .modal-form-field {
     margin-bottom: 4px;
     font-size: 12px;
-    line-height: 1.17;
     letter-spacing: 0.04em;
     color:#8e8f99;
     display: block;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16;
+    color: #757575;
 
+}
+.container-imput{
+    position: relative;
+    display: block;
 }
 
 .modal-form-textaria {
     margin-bottom: 20px
 }
 
-.modal-form-field-desc {
-    display: block;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-    color: #757575;
-    margin-bottom: 4px;
-}
-
 .modal-form-input-wrapper {
-    position: relative;
-    display: block;
+    /* position: relative;
+    display: block; */
 }
 
 .modal-form-input {
     width: 100%;
     height: 40px;
-    border-radius: 5px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    padding-left: 42px;
+    border-radius: 4px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    padding-left: 38px;
+    outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    
 }
 
 .modal-form-input:focus {
     outline: none;
     border-color: #4D5AE5;
+    
 }
 
 .modal-form-input-icon {
     position: absolute;
+    
     top: 50%;
-    left: 12px;
+    left: 16px;
     transform: translateY(-50%);
     display: block;
     width: 18px;
