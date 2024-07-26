@@ -667,7 +667,7 @@ font-family: var(--font-family);
 }
 
 .modal-form-check:checked+.modal-form-checkbox>.span-checkbox {
-    background-color: var(--logo-color);
+    background-color:#404bbf;
     color: #404bbf;
     border: none;
     fill:#F4F4FD;
